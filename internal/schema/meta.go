@@ -1,7 +1,7 @@
 package schema
 
 import (
-	"github.com/graph-gophers/graphql-go/ast"
+	"github.com/every-base/graphql-go/ast"
 )
 
 func init() {

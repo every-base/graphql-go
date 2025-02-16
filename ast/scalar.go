@@ -1,6 +1,6 @@
 package ast
 
-import "github.com/graph-gophers/graphql-go/errors"
+import "github.com/every-base/graphql-go/errors"
 
 // ScalarTypeDefinition types represent primitive leaf values (e.g. a string or an integer) in a GraphQL type
 // system.

@@ -10,14 +10,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/graph-gophers/graphql-go"
-	"github.com/graph-gophers/graphql-go/directives"
-	gqlerrors "github.com/graph-gophers/graphql-go/errors"
-	"github.com/graph-gophers/graphql-go/example/social"
-	"github.com/graph-gophers/graphql-go/example/starwars"
-	"github.com/graph-gophers/graphql-go/gqltesting"
-	"github.com/graph-gophers/graphql-go/introspection"
-	"github.com/graph-gophers/graphql-go/trace/tracer"
+	"github.com/every-base/graphql-go"
+	"github.com/every-base/graphql-go/directives"
+	gqlerrors "github.com/every-base/graphql-go/errors"
+	"github.com/every-base/graphql-go/example/social"
+	"github.com/every-base/graphql-go/example/starwars"
+	"github.com/every-base/graphql-go/gqltesting"
+	"github.com/every-base/graphql-go/introspection"
+	"github.com/every-base/graphql-go/trace/tracer"
 )
 
 type helloWorldResolver1 struct{}

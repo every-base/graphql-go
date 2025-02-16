@@ -1,6 +1,6 @@
 package ast
 
-import "github.com/graph-gophers/graphql-go/errors"
+import "github.com/every-base/graphql-go/errors"
 
 // FieldDefinition is a representation of a GraphQL FieldDefinition.
 //

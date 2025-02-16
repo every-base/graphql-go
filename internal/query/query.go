@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"text/scanner"
 
-	"github.com/graph-gophers/graphql-go/ast"
-	"github.com/graph-gophers/graphql-go/errors"
-	"github.com/graph-gophers/graphql-go/internal/common"
+	"github.com/every-base/graphql-go/ast"
+	"github.com/every-base/graphql-go/errors"
+	"github.com/every-base/graphql-go/internal/common"
 )
 
 const (

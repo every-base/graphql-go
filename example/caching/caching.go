@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/graph-gophers/graphql-go/example/caching/cache"
+	"github.com/every-base/graphql-go/example/caching/cache"
 )
 
 const Schema = `

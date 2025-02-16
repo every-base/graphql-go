@@ -8,11 +8,11 @@ import (
 
 	"encoding/json"
 
-	"github.com/graph-gophers/graphql-go/ast"
-	"github.com/graph-gophers/graphql-go/errors"
-	"github.com/graph-gophers/graphql-go/internal/query"
-	"github.com/graph-gophers/graphql-go/internal/schema"
-	"github.com/graph-gophers/graphql-go/internal/validation"
+	"github.com/every-base/graphql-go/ast"
+	"github.com/every-base/graphql-go/errors"
+	"github.com/every-base/graphql-go/internal/query"
+	"github.com/every-base/graphql-go/internal/schema"
+	"github.com/every-base/graphql-go/internal/validation"
 )
 
 type Schema struct {

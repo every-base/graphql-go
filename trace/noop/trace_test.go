@@ -3,10 +3,10 @@ package noop_test
 import (
 	"testing"
 
-	"github.com/graph-gophers/graphql-go"
-	"github.com/graph-gophers/graphql-go/example/starwars"
-	"github.com/graph-gophers/graphql-go/trace/noop"
-	"github.com/graph-gophers/graphql-go/trace/tracer"
+	"github.com/every-base/graphql-go"
+	"github.com/every-base/graphql-go/example/starwars"
+	"github.com/every-base/graphql-go/trace/noop"
+	"github.com/every-base/graphql-go/trace/tracer"
 )
 
 func TestInterfaceImplementation(t *testing.T) {

@@ -4,8 +4,8 @@ package noop
 import (
 	"context"
 
-	"github.com/graph-gophers/graphql-go/errors"
-	"github.com/graph-gophers/graphql-go/introspection"
+	"github.com/every-base/graphql-go/errors"
+	"github.com/every-base/graphql-go/introspection"
 )
 
 // Tracer is a no-op tracer that does nothing.
