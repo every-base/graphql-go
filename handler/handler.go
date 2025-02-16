@@ -9,6 +9,12 @@ import (
 
 type HandlerOption func(h *Handler)
 
+func WithExplorer(explorer http.Handler) HandlerOption {
+	return func(h *Handler) {
+		h.explorer = explorer
+	}
+}
+
 var _ http.Handler = (*Handler)(nil)
 
 func New(schema *graphql.Schema, opts ...HandlerOption) *Handler {
@@ -20,7 +26,8 @@ func New(schema *graphql.Schema, opts ...HandlerOption) *Handler {
 }
 
 type Handler struct {
-	schema *graphql.Schema
+	schema   *graphql.Schema
+	explorer http.Handler
 }
 
 func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
@@ -28,7 +35,11 @@ func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	case http.MethodPost:
 		h.exec(w, r)
 	default:
-		http.Error(w, http.StatusText(http.StatusMethodNotAllowed), http.StatusMethodNotAllowed)
+		if r.Method == http.MethodGet && h.explorer != nil {
+			h.explorer.ServeHTTP(w, r)
+		} else {
+			http.Error(w, http.StatusText(http.StatusMethodNotAllowed), http.StatusMethodNotAllowed)
+		}
 	}
 }
 
