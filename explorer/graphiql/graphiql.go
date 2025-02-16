@@ -77,12 +77,11 @@ var tmpl = template.Must(template.New("GraphiQL").Parse(`
     <script>
       const root = ReactDOM.createRoot(document.getElementById('graphiql'));
       const fetcher = GraphiQL.createFetcher({{ . }});
-      const explorerPlugin = GraphiQLPluginExplorer.explorerPlugin();
       root.render(
         React.createElement(GraphiQL, {
           fetcher,
           defaultEditorToolsVisibility: true,
-          plugins: [explorerPlugin],
+          plugins: [],
         }),
       );
     </script>
